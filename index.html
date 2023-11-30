@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&quot; rel=" stylesheet">
+    <title>Danny Burgers</title>
+    <section id="overlay">
+        <img src="img/burger-logo.svg">
+        <hr>
+        <!--Add your code below-->
+        <form action="/practice.html" method="POST">
+            <h1>Burgers</h1>
+            <p>getting info about burgers</p>
+            <label for="username">username</label>
+            <input type="text" name="username" id="username">
+            <br>
+            <label for="user-pw">passowrd</label>
+            <input type="password" name="user-pw" id="user-pw">
+            <br>
+            <label for="amount">How many patties would you like</label>
+            <input type="number" name="amount" id="amount" step="1">
+            <br>
+            <section class="cooked">
+            <label for="donenss">how do want your patty cooked</label>
+            <br>
+            <span>rare</span>
+            <input type="range" name="doneness" id="doneness" min="0" max="5" step="0.5">
+            <span>well done</span>
+            </section>
+        </form>
+    </section>
+</head>
+
+<body>
