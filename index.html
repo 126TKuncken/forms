@@ -7,27 +7,90 @@
     <link href="https://fonts.googleapis.com/css?family=Rubik&quot; rel=" stylesheet">
     <title>Danny Burgers</title>
     <section id="overlay">
-        <img src="img/burger-logo.svg">
+        <img src="img/burger-logo.svg" id="logo">
         <hr>
         <!--Add your code below-->
         <form action="/practice.html" method="POST">
-            <h1>Burgers</h1>
-            <p>getting info about burgers</p>
+            <h1>Create Your Own Burgers</h1>
+            <p>Start Below</p>
             <label for="username">username</label>
             <input type="text" name="username" id="username">
             <br>
             <label for="user-pw">passowrd</label>
             <input type="password" name="user-pw" id="user-pw">
             <br>
-            <label for="amount">How many patties would you like</label>
-            <input type="number" name="amount" id="amount" step="1">
+            <section class="protein">
+                <label for="amount">How many patties would you like</label>
+                <input type="number" name="amount" id="amount" step="1">
+            </section>
             <br>
             <section class="cooked">
-            <label for="donenss">how do want your patty cooked</label>
-            <br>
-            <span>rare</span>
-            <input type="range" name="doneness" id="doneness" min="0" max="5" step="0.5">
-            <span>well done</span>
+                <label for="donenss">how do want your patty cooked</label>
+                <br>
+                <span>rare</span>
+                <input type="range" name="doneness" id="doneness" min="0" max="5" step="0.5">
+                <span>well done</span>
+            </section>
+            <section class="toppings">
+                <span>What toppings would you like</span>
+                <br>
+                <!-- tis is where lettuce checkbox goes -->
+                <input type="checkbox" id="lettuce" value="lettuce" name="topping">
+                <label for="lettuce">lettuce</label>
+                <!-- tis is where tomato checkbox goes -->
+                <input type="checkbox" id="Tomato" value="Tomato" name="topping">
+                <label for="tomato">tomato</label>
+                <!-- tis is where your own checkbox goes -->
+                <input type="checkbox" id="extra cheese" value=" extra cheese" name="topping">
+                <label for="cheese"> ex.cheese</label>
+                <input type="checkbox" id="onions" value="onions" name="topping">
+                <label for="onions">onions</label>
+                <input type="checkbox" id="pickles" value="pickles" name="topping">
+                <label for="pickles">pickles</label>
+                <input type="checkbox" id="bacon" value="bacon" name="topping">
+                <label for="bacon">bacon</label>
+            </section>
+            <section class="cheesy">
+                <span>Would you like to add cheese</span>
+                <br>
+                <input type="radio" name="cheese" id="yes" value="yes">
+                <label for="yes">yes</label>
+
+                <input type="radio" name="cheese" id="no" value="no">
+                <label for="no">no</label>
+            </section>
+            <section class="bun type">
+                <label for="bun">What type of bun would you like</label>
+                <!-- Dropdown options here -->
+                <select name="bun" id="bun">
+                    <option value="regular">regular</option>
+                    <option value="sesame">sesame</option>
+                    <option value="potato">potoato</option>
+                    <option value="sesame">pretzel</option>
+                    <option value="sourdough">sourdough</option>
+                    <option value="gluten-free">gluten-free</option>
+                </select>
+                <section class="sauce-selection">
+                    <label for="what type of sauce would you like">what type of sauce would you like</label>
+                    <input type="text" list="sauce" id="sauce" name="sauce">
+                    <datalist id="sauces">
+                        <option value="ketchup">ketchup</option>
+                        <option value="bbq sauce">bbq sauce</option>
+                        <option value="mayo">mayo</option>
+                        <option value="siracha">siracha</option>
+
+                    </datalist>
+
+                </section>
+                <section class="extra info">
+                    <label for="extra">anything else you want to add</label>
+                    <br>
+                    <textarea name="extra" id="extra" cols="40" rows="3">No thanks</textarea>
+                </section>
+                <br>
+                <section class="submission">
+                    <input type="submit">
+                </section>
             </section>
         </form>
     </section>
